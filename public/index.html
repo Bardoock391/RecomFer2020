@@ -29,6 +29,42 @@
         body { border-top: 16px solid #ffa100; }
       }
     </style>
+   
+
+   <link rel="stylesheet" href="estilos.css.css">
+		<link rel="stylesheet" href="css/fuentes.css"
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Sugerencias</title>
+			<style>
+			
+         html {
+         	  font-family: sans-serif;
+         	  text-align: center;
+
+         }
+          .alinear{
+
+          	display: inline-block;
+          	text-align: center;
+
+          }
+
+          footer{
+
+          	font-size: small;
+          }
+
+          .izq{
+
+          	display: inline-block;
+          	text-align: left;
+          }
+
+		</style>
+
+
   </head>
   <body>
     <div id="message">
@@ -60,6 +96,162 @@
           document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
         }
       });
+
+      
+
     </script>
-  </body>
+
+<div class="alinear">
+  <h1>Videojuegos</h1>
+  <h2>Te gusta los videojuegos en PlayStatio, te diremos que tipo de gamer eres?</h2>
+
+  <strong>Que juegos te gusta jugar?</strong>
+  <p> (Colocar el nombre del juego) </p>
+</div>
+
+<div class ="izq"></div>
+
+
+<h3>Juegos de PlayStation</h3>
+
+
+</div>
+<br>
+<div class ="alinear"></div>
+<form action="javascript: recomendaciones();">
+
+<center>
+
+<table border="1">
+  <tr>
+    <th colspan="2">Juegos en PlayStation</th>
+  </tr>
+  <tr>
+    <td>Ingrese el juego: <select id="res" name="juego">
+
+        <option value="value1">Death Stranding</option> 
+        <option value="value2" >Doom Eternal</option>
+        <option value="value3">Star Wars Jedi: Fallen Order</option>
+        <option value="value4">Red Dead Redemption 2</option>
+        <option value="value5">The Last of Us</option>
+        <option value="value6">Resident Evil 2</option>
+
+        </select></td>
+    
+    <td>Ingrese en que consola lo jugaras: <select id=res1 name="consola">
+
+        <option value="conso1">XBOX ONE</option> 
+        <option value="conso2" >PLAY STATION 4</option>
+
+      </select> </td>
+    <td><input type="submit" value="enviar" ></td>
+  </tr>
+
+</table>
+</center>
+</form>
+</div>
+
+
+<script>
+
+  "use strict";
+
+  //let res=document.getElementById("juego");
+//let res1=document.getElementById("Consola");
+
+  function recomendaciones(){
+
+    var gamer=res.value;
+var con=res1.value;
+
+
+    if(gamer == "value1"){
+
+  if (con == "conso1"){
+
+    alert("El juego que elegiste te dice que eres un gamer explorador y con mucha acción y con una consola muy potente para decifrar codigo ante el juego");
+
+  } else 
+
+       if(con == "conso2"){
+
+      alert("El juego que elegiste te dice que eres un gamer explorador y con mucha acción y con la consola que te da una gran conectividad de multijugador online");
+
+       }
+
+    } else if (gamer == "value2"){
+
+  if (con == "conso1"){
+
+    alert("El juego que elegiste te dice que eres un gamer con mucha acción e intriga y con una consola que Es compatible con Xbox original y Xbox 360");
+
+  } else 
+  
+  if (con == "conso2"){
+
+    alert("El juego que elegiste te dice que eres un gamer con mucha acción e intriga");
+
+  }	
+
+    } else if (gamer == "value3"){
+
+  if (con == "conso1"){
+ 
+    alert("El juego que elegiste te dice que eres un gamer con mucha acción y perseverante. La consola da Servicios por suscripción con muchos juegos");
+
+  } else 
+
+  if (con == "conso2"){
+    
+    alert("El juego que elegiste te dice que eres un gamer con mucha acción y perseverante");
+
+  }
+
+    
+    } else if (gamer == "value4"){
+
+  if (con == "conso1"){
+
+    alert("El juego que elegiste te dice que eres un gamer con mucha acción, valiente y respetado.A demas la Consola tiene Mucho más que los tradicionales Netflix, YouTube y Crunchyroll, la Xbox One cuenta con Kodi y VLC, aplicaciones gratuitas para la administración multimedia que también están disponibles para PC");
+
+  } else 
+
+  if (con == ("conso2")){
+
+    alert("El juego que elegiste te dice que eres un gamer con mucha acción, valiente y respetado. Ademas con una muy buena valentia");
+
+  }
+
+    } else if (gamer == "value5"){
+
+  if (con == ("conso1")){
+
+    alert("El juego que elegiste te dice que eres un gamer con mucha acción, suspenso, valiente, honrado, aventurero y leal . Xbox Play Anywhere Anunciada en el E3 de 2016, la función permite que los dueños de una Xbox One ejecuten juegos exclusivos compatibles directamente en la PC");
+  } else 
+
+  if (con == ("conso2")){
+
+    alert("El juego que elegiste te dice que eres un gamer con mucha acción, suspenso, valiente, honrado, aventurero y leal");
+  }
+  
+
+    } else if (gamer == "value6"){
+
+  if (con == ("conso1")){
+
+    alert("El juego que elegiste te dice que eres un gamer con mucha acción, suspenso y paciencia");
+  } else {
+
+    if (con == ("conso2")){
+
+      alert("El juego que elegiste te dice que eres un gamer con mucha acción, suspenso y paciencia");
+  }
+
+    }
+  }
+}
+
+</script>  
+</body>
 </html>
