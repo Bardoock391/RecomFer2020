@@ -9,5 +9,7 @@
 
     body {
 
-        background-image:url(Imagenes/imagen.jpg) ;
+        background-image:url(Imagenes/imagen.jpg);
+        background-repeat: no-repeat;
+        color:#fff;
     }
